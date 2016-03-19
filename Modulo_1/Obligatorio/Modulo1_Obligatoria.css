@@ -1,0 +1,8 @@
+body {background: LightGray;color: #1a1a1a;font-family: serif;font-size:14px;
+font-style:normal; font-weight: bold;}
+h1,h2,h3{color: darkblue;}
+h1{text-align: center;}
+li {margin-bottom: 10px;opacity: 0.9;}
+p{
+    opacity: 0.9;
+}
