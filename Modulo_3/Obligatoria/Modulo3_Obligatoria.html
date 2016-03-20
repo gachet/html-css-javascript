@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1 id="h1"></h1>
+    <span><strong>Víctor Sánchez</strong></span>
+    <h2 id="h2">La fecha y la hora son:</h2>
+    <div id="fecha"></div>
+    <script type="text/javascript">
+        var fecha = new Date();
+        var msj;
+
+        if (fecha.getHours() < 7) {
+            msj = "Buenas noches";
+        } else if (fecha.getHours() < 12) {
+            msj = "Buenos días";
+        } else if (fecha.getHours() < 21) {
+            msj = "Buenas tardes";
+        } else {
+            msj = "Buenas noches";
+        }
+
+        document.getElementById("h1").innerHTML = msj;
+        document.getElementById("fecha").innerHTML = fecha;
+    </script>
+    <div>
+        
+        <ol type="a">
+            <li>
+                <span>Contenido de innerHTML de elemento identificado por id="h2":</span>
+                <div id="a"></div>
+            </li>
+            <br>
+            
+            <li>
+                <span> Contenido de outerHTML de elemento identificado por id="h1":</span>
+                <div id="b"></div>
+            </li>
+            <br>
+            
+            <li><span>Contenido de de la propiedad global: location.href:</span>
+                <div id="c"></div>
+                </li>
+            <br>
+            
+            <li>
+               <span>Contenido de de la propiedad global: location</span>
+                <div id="d"></div>
+            </li>
+            <br>
+            
+            <li>
+                <span>Contenido de de las propiedades globales: screen.width y screen.heigth</span>
+                <div id="e"></div>
+            </li>
+        </ol>
+        <script>
+            var a=document.getElementById("h2").innerHTML;
+            var b=document.getElementById("h1").outerHTML;
+            var c=  location.href;
+            var d= location;
+            var e1= screen.width;
+            var e2= screen.height;
+            document.getElementById("a").innerHTML=a;
+            document.getElementById("b").innerHTML=b;
+            document.getElementById("c").innerHTML=c;
+            document.getElementById("d").innerHTML=d;
+            document.getElementById("e").innerHTML="screen.width:"+e1 + " y "+ "screen.heigth:"+e2;
+        </script>
+    </div>
+</body>
+
+</html>
