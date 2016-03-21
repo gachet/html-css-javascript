@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buenos días, bienvenido a la calculadora de Víctor Sánchez</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+   <h1>Buenos días, bienvenido a la calculadora de Víctor Sánchez</h1>
+    
+    
+        <div class="box">
+            <span>Número:</span>
+            <input type="text" size="15" id="res">
+
+               <h5>=>Operaciones unitarias (con un solo operando): </h5>
+               <div class="botones">
+                    <button id="x2">x^2</button>
+                    <button id="x1">1/x</button>
+                    <button id="raiz">sqrt(x)</button>
+                    <button id="pE_r">parte_entera(x)</button>
+                    <button id="2_n" >2^n</button>
+                    <button id="factorial">n!</button>
+                </div>
+                <h5>=>Operaciones binarias (con dos operandos): </h5>
+                <div class="botones">
+                    <button id="mas">+</button>
+                    <button id="menos">-</button>
+                    <button id="multiplicar">*</button>
+                    <button id="dividir">/</button>
+                    <button id="x_y">x^y</button>
+                </div>
+                <h5>=>Operaciones con n operandos introducidos en formato CSV: </h5>
+                <button id="sumatoria">Σx</button>
+                <button id="productoria">∏x</button>
+                <h5> Presiona para ver resultado</h5>
+                <div class="botones">
+                <button id="calcular">=</button></div>
+
+        </div>
+</body>
+
+</html>
