@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buenos días, bienvenido a la calculadora de Víctor Sánchez</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onLoad="inic()">
+   <h1>Buenos días, bienvenido a la calculadora de Víctor Sánchez</h1>
+    
+    
+        <div class="box">
+            <span>Número:</span>
+            <input type="text" size="15" id="num" onClick="vaciar()">
+
+               <h5>=>Operaciones unitarias (con un solo operando): </h5>
+               <div class="botones">
+                    <button onClick="x2()">x^2</button>
+                    <button onClick="x1()">1/x</button>
+                    <button onClick="raiz()">sqrt(x)</button>
+                    <button onClick="parte_entera()" id="pE_r">parte_entera(x)</button>
+                </div>
+                <h5>=>Operaciones binarias (con dos operandos): </h5>
+                <div class="botones">
+                    <button onClick="mas()">+</button>
+                    <button onClick="menos()">-</button>
+                    <button onClick="multiplicar()">*</button>
+                    <button onClick="dividir()">/</button>
+                    <button onClick="x_y()">x^y</button>
+                </div>
+                <h5> Presiona para ver resultado</h5>
+                <div class="botones">
+                <button onClick="calcular()">=</button></div>
+
+        </div>
+</body>
+
+</html>
