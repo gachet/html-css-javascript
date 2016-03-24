@@ -1,0 +1,50 @@
+/*
+Basicamente este seria el css basico de el temporizador
+
+Detalles:
+    Arreglar responsividad.
+    
+*/
+#box-temp, container-fluid{
+    background-color: antiquewhite;
+    height: 35%;
+}
+#titulo{
+    text-align: center;
+    color: black;
+    font-family: sans-serif bold;
+    font-size: 22px;
+    margin: 0.5;
+    padding: 0;
+    
+    
+    
+}
+#box-minutos{
+    margin: 0;
+    padding: 0.2;
+    text-align: center;
+   width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#box-minutos-cuenta{
+    font-size: 30px;
+    font-family: monospace;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.botones{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: aliceblue;
+}
+#start, stop{
+    margin-left: auto;
+    margin-right: auto;
+    font: 25px;
+    
+}

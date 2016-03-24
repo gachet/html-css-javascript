@@ -1,10 +1,10 @@
 html{
     font-size: 12px;
-    font-style: oblique;
+    font-style: normal;
     padding: 0;
     margin: 0;
 }
-h1{
+.h1{
     text-align: center;
     font-size: 2em;
     color: chocolate;
@@ -12,14 +12,13 @@ h1{
     background-color: lightgray;
     opacity: .7;
     border: blue;
-    border-radius: 25%;
+    border-radius: 5%;
 }
 .box{
     font-size: 1.2em;
     background: lightgrey;
-    width: 30%;
+    width: auto;
     height: 40%;
-    padding: 1em;
    margin-left: auto;
     margin-right: auto;
     border: solid 1.5em brown;
@@ -27,13 +26,10 @@ h1{
     opacity: 0.9;
     float: none;
     display: block;
-    padding-left: auto;
-    padding-right: auto;
 }
-button{
+.button_1{
     font-family: verdana;
-    font-size:.9em;
-    width: 50%;
+    width: 10em;
     height: auto;
     font-style: normal;
     border: solid black;
@@ -42,7 +38,6 @@ button{
     text-align: center;
     background: cadetblue;
     opacity: .8;
-    box-shadow: 1px;
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -66,16 +61,14 @@ button{
     }
 }
 
-h5{
+.h5{
     color:brown;
-    font-size: .9em;
+    font-size: 1.2em;
     font-style: normal;
     font-family: sans-serif;
     text-align: center;
-    padding-left: auto;
-    padding-right: auto;
 }
-span{
+.span{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,19 +79,45 @@ span{
     font-weight: bold;
     color: darkslateblue
 }
-input{
+.memoria{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 100%;
+    height: 4em;
     font-size: 1.5em;
     color: blanchedalmond;
     background: black;
     border: solid darkred;
 }
-.carousel-inner .item img,
-  .carousel-inner .item img               { width: 100%;}
-  .container .carousel-indicators .active { background-color:orange;}
-  .container .carousel-indicators li      { border: 1px solid orange;}
-  .container .panel-footer                { margin-top:20px;}
+.input_2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 1.7em;
+    font-size: 1.5em;
+    color: blanchedalmond;
+    background: black;
+    border: solid darkred;
+}
+.over {
+  border: solid 5px purple;
+    height: 2em;
+}
+.draggable
+{
+  border: solid 2px gray;
+}
+.border_gris
+{
+  border: solid 2px gray;
+    margin-left: 2px;
+}
+ul{
+    list-style-type: circle;
+}
+.placeholder{
+    font-size: 1.8em;
+    height: 2em;
+}

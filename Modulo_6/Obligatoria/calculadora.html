@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buenos días, bienvenido a la calculadora de Víctor Sánchez</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calculadora.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+   <div class="container-fluid">
+    <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">MOOC</a>
+                </div>
+                <div class="collapse navbar-collapse" id="miMenu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">INICIO</a>
+                        </li>
+                        <li>
+                            <a href="puzzle.html">PUZZLE</a>
+                        </li>
+                        <li>
+                            <a href="calculadora.html">CALCULADORA</a>
+                        </li>
+                        <li>
+                            <a href="frases.html">FRASES</a>
+                        </li>
+                        <li>
+                            <a href="temporizador.html">TEMPORIZADOR</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <h1 class="h1">Buenos días, bienvenido a la calculadora de Víctor Sánchez v(1.2)</h1>
+       <div class="container-fluid">
+         <h4>NOTA: DETALLES por mejorar</h4>
+              <ol>
+                  <li>Parte Obligatoria- Completada</li>
+                  <li>Parte Opcional:
+                      <ul>
+                          <li>ToM Completado</li>
+                          <li>FromM completado</li>
+                          <li>Sugerencias para probar la parte Opcional:
+                          <ol>
+                              <li>Si se va a utilizar el boton ToM o FromM desactivar el otro, es decir  que no queden los 2 activados. se sabra que esta activado porque agregue este simbolo ▀[seguro hay  otra manera de hacerlo mas sencilla]</li>
+                              <li>se pondra un marco purpura para que se observe en donde arrastrar el numero</li>
+                              <li>El numero tanto en la casilla numero como en la casilla memoria, tendra un brode GRIS[esto es modo visual]</li>
+                              <li>Siguiendo esto veran que se puede completar obviamente falta poco. Pero con lo que he comentado anterior mente se ve que funciona.</li>
+                          </ol>
+                          </li>
+                          
+                      </ul>
+                  
+                  
+                  </li>
+              </ol>
+             
+        
+           
+       </div>
+        <div class="box">
+            <!--<span class="span">Número:</span>
+            <input type="text" size="15" id="res" class="input">-->
+                <span class="span">Número:</span>
+            <div id ="origin" class="input_2">
+                <div id="res" class="draggable" contentEditable="true"></div>
+            </div>
+                <span class="span">Memoria:</span>
+                <div id="Memoria" class="memoria inline container-fluid">
+                    <div class="ui-widget-content">
+                        <ul id=tS>
+                          <li class="placeholder">Agrega tu items aqui</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="input">
+                    <ul id="drop" class="inline-block">
+                        <li class="placeholder">Arrastra aqui</li>
+                    </ul>
+                </div>-->
+                
+            <div class="botones inline">
+                <button id="ToM" class="button_1">ToM</button>
+                <button id="FromM" class="button_1">FromM</button>
+            </div>
+               <h5 class="h5">=>Operaciones unitarias (con un solo operando): </h5>
+               <div class="botones">
+                    <button id="x2" class=" button_1">x<sup>2</sup></button>
+                    <button id="x1" class=" button_1">1/x</button>
+                    <button id="raiz" class=" button_1">√x</button>
+                    <button id="pE_r" class=" button_1">parte_entera(x)</button>
+                    <button id="2_n" class=" button_1">2<sup>n</sup></button>
+                    <button id="factorial" class=" button_1">n!</button>
+                </div>
+                <h5 class="h5">=>Operaciones binarias (con dos operandos): </h5>
+                <div class="botones">
+                    <button id="mas" class=" button_1">+</button>
+                    <button id="menos" class=" button_1">-</button>
+                    <button id="multiplicar" class=" button_1">*</button>
+                    <button id="dividir" class=" button_1">/</button>
+                    <button id="x_y" class=" button_1">x<sup>y</sup></button>
+                </div>
+                <h5 class="h5" >=>Operaciones con n operandos introducidos en formato CSV: </h5>
+                <div class="botones">
+                <button id="sumatoria" class=" button_1">Σx</button>
+                <button id="productoria" class=" button_1">∏x</button>
+                </div>
+                <h5 class="h5"> Presiona para ver resultado</h5>
+                <div class="botones">
+                <button id="calcular" class=" button_1">=</button></div>
+
+        </div>
+        <div class="panel-footer">Víctor Sánchez</div>
+    </div>
+</body>
+
+</html>
