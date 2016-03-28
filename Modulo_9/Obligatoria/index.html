@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>GMaps.js &mdash; Geolocation</title>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="js/gmaps.js"></script>
-  <script type="text/javascript" src="js/generar_rutas.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GMaps.js &mdash; Geolocation</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="js/generar_rutas.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
+
 <body>
-  <h1>Geolocalización</h1>
-  <div id="map"></div>
+    <div class="container-fluid">
+        <div class="container-fluid TitleGeo">Geolocalización</div>
+        <div class="container-fluid">
+            <button id="compactar" type="button" class="btn btn-primary botones" title="Calcula la ruta desde la tu Geolocalización al ingresar al navegador y tu ultima marca agregada.">Compactar</button>
+        </div>
+        <div id="map" class="container-fluid"></div>
+    </div>
 </body>
+
 </html>
+
+            
