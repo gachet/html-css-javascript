@@ -1,3 +1,5 @@
+/* global galeria */
+
 $(document).ready(function() {
 
     var t, actual;
@@ -42,7 +44,7 @@ $(document).ready(function() {
             $("#foto_d").html(galeria[actual].foto);
 
             $("#datos").css("display", "block");
-        })
+        });
 
 
         $("#nuevo").on("click", function() {
@@ -56,7 +58,7 @@ $(document).ready(function() {
 
             generar_selector();
             select(actual);
-        })
+        });
         
         $("#guardar").on("click",function(){
             $("#datos").css("display", "none");

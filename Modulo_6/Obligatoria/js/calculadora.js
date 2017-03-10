@@ -87,7 +87,6 @@ $(document).ready(function() {
                     activeClass: "#origin",
                     drop: function(event, ui) {
                         console.log('droppFromM a: ' + ui.draggable.text());
-                        'ui.draggable.appendTo(this).css({ position: "absolute", top: ui.position.top, left: ui.position.left}); '
                         $(this).html('<div id="res" contentEditable="true" class="draggable">' + ui.draggable.text() + '</div>');
                         ui.draggable.remove();
 

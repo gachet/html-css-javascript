@@ -1,3 +1,5 @@
+/* global galeria */
+
 $(document).ready(function () {
     'use strict';
     //////////////////////////////
@@ -88,7 +90,7 @@ $(document).ready(function () {
         $("#borrar").on("click", function () {
             $("#datos").css("display", "none");
             var aux=actual;
-            if(aux===0){aux+=1}
+            if(aux===0){aux+=1;}
             
             console.log("borrare a " + BDFrases_JsonToValue[actual].persona);
             BDFrases_JsonToValue.splice(actual, aux);
